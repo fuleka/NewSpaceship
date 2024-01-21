@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn02ynprjbwe3"]
+
+[ext_resource type="Texture2D" uid="uid://dvuojwwotm3hv" path="res://Sprite/spaceShips_009.png" id="1_de6gb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eypfi"]
+radius = 38.2099
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eypfi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("1_de6gb")
