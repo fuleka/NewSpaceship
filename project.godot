@@ -20,6 +20,14 @@ config/icon="res://icon.svg"
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
+[layer_names]
+
+2d_physics/layer_1="wall"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemy"
+2d_physics/layer_4="item"
+2d_physics/layer_5="bullet"
+
 [rendering]
 
 renderer/rendering_method="mobile"

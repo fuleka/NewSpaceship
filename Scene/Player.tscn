@@ -6,6 +6,8 @@
 radius = 38.2099
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 29
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_eypfi")
