@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpejg5stxbohj"]
+
+[ext_resource type="Texture2D" uid="uid://dqgrfqy3sunec" path="res://Sprite/spaceMissiles_037.png" id="1_fgpim"]
+[ext_resource type="Script" path="res://Scene/enemy.gd" id="1_l4gbc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tf5mk"]
+size = Vector2(9, 34)
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 18
+script = ExtResource("1_l4gbc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_tf5mk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fgpim")

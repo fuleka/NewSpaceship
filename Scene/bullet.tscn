@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc0cvbq07peh6"]
+
+[ext_resource type="Texture2D" uid="uid://crs6ocudjgr1n" path="res://Sprite/spaceBuilding_004.png" id="1_gdiok"]
+[ext_resource type="Script" path="res://Scene/bullet.gd" id="1_u1sex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_npu5j"]
+radius = 15.0333
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_u1sex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_npu5j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gdiok")

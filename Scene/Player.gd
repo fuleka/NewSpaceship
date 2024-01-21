@@ -1,21 +1,27 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const speed = 300.0
+
+func shooting(_delta):
+
 
 func _physics_process(delta):
 	velocity = Vector2(0,0)
 	
 	if Input.is_action_pressed("ui_left"):
-		velocity.x = -SPEED
+		velocity.x = -speed
 	
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = SPEED
+		velocity.x = speed
 		
 	if Input.is_action_pressed("ui_up"):
-		velocity.y = -SPEED
+		velocity.y = -speed
 		
 	if Input.is_action_pressed("ui_down"):
-		velocity.y = SPEED
+		velocity.y = speed
+
+	if Input.is_action_pressed("ui_accept"):
+		pass
 
 	velocity.normalized()
 	
